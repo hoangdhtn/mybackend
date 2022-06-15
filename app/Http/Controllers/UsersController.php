@@ -23,7 +23,9 @@ class UsersController extends Controller
     public function usersData()
     {
         $users = User::all();
-        return Datatables::of($users)->make(true);
+        return Datatables::of($users)->addColumn('action', function (User $data) {
+            return '<a href="'. '' .'" class="btn btn-success"><i class="icon md-eye" aria-hidden="true"></i> Xem</a> <a href="'. '' .'" class="btn btn-danger"><i class="icon md-delete" aria-hidden="true"></i> Xóa</a>';
+        })->rawColumns(['action'])->make(true);
     }
 
 

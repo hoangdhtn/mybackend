@@ -43,7 +43,7 @@
     <meta name="description" content="bootstrap material admin template">
     <meta name="author" content="">
     
-    <title>Dashboard | Remark Material Admin Template</title>
+    <title>Dashboard | MyBE</title>
     
     <link rel="apple-touch-icon" href="{{asset('public/backend/assets/images/apple-touch-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('public/backend/assets/images/favicon.ico')}}">
@@ -110,9 +110,9 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="site-footer-legal">© 2018 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">Remark</a></div>
+      <div class="site-footer-legal">© 2022 <a href="">MyBE</a></div>
       <div class="site-footer-right">
-        Crafted with <i class="red-600 icon md-favorite"></i> by <a href="https://themeforest.net/user/creation-studio">Creation Studio</a>
+        Crafted with <i class="red-600 icon md-favorite"></i> by <a href="https://themeforest.net/user/creation-studio">PHH</a>
       </div>
     </footer>
     <!-- Core  -->
