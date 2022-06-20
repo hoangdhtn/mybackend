@@ -1,12 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-use Auth;
-use Illuminate\Http\Request;
-use App\Models\User;
 
-class DashboardController extends Controller
+use Illuminate\Http\Request;
+// Model
+use App\Models\User;
+use Auth;
+
+class UserInformationController extends Controller
 {
+    public function __construct(){
+        $this->middleware(['role_or_permission:user|admin|edit information']);
+        // theo per
+        // $this->middleware('permission:add user', ['only' => ['create', 'store']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,14 +23,6 @@ class DashboardController extends Controller
     public function index()
     {
         //
-        $user = User::find(auth()->user()->id);
-        if($user->hasRole('admin|super admin')){
-            $listUsers = User::all();    
-            return view('admincp.dashboard')->with(compact(['listUsers']));
-        }else{
-            return view('usercp.index', ['id' => auth()->user()->id])->with(compact('user'));
-        }
-        
     }
 
     /**
@@ -55,6 +55,8 @@ class DashboardController extends Controller
     public function show($id)
     {
         //
+        $user = User::find($id);
+        return view('usercp.index')->with(compact('user'));
     }
 
     /**
