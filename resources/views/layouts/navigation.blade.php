@@ -144,7 +144,7 @@ data-toggle="collapse">
 
   <!-- Navbar Toolbar Right -->
   <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
-    <li class="nav-item dropdown">
+    {{-- <li class="nav-item dropdown">
       <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
       aria-expanded="false" role="button">
       <span class="flag-icon flag-icon-us"></span>
@@ -161,7 +161,7 @@ data-toggle="collapse">
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
                 <span class="flag-icon flag-icon-nl"></span> Dutch</a>
               </div>
-            </li>
+            </li> --}}
             <li class="nav-item dropdown">
               <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
               data-animation="scale-up" role="button">
@@ -176,7 +176,7 @@ data-toggle="collapse">
                 @php
                 $roles = Auth::user()->getRoleNames();
                 foreach($roles as $role){
-                  echo '<span style="text-transform: uppercase;"> ' . $role . ' </span> |';
+                  echo '<span style="text-transform: uppercase;"> ' . $role . ' </span>';
                 }
                 @endphp
 
@@ -195,7 +195,7 @@ data-toggle="collapse">
 
           </div>
         </li>
-        <li class="nav-item dropdown">
+        {{-- <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Notifications"
           aria-expanded="false" data-animation="scale-up" role="button">
           <i class="icon md-notifications" aria-hidden="true"></i>
@@ -277,8 +277,8 @@ data-toggle="collapse">
             </a>
           </div>
         </div>
-      </li>
-      <li class="nav-item dropdown">
+      </li> --}}
+      {{-- <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Messages"
         aria-expanded="false" data-animation="scale-up" role="button">
         <i class="icon md-email" aria-hidden="true"></i>
@@ -323,13 +323,13 @@ data-toggle="collapse">
           </a>
         </div>
       </div>
-    </li>
-    <li class="nav-item" id="toggleChat">
+    </li> --}}
+    {{-- <li class="nav-item" id="toggleChat">
       <a class="nav-link" data-toggle="site-sidebar" href="javascript:void(0)" title="Chat"
       data-url="site-sidebar.tpl">
       <i class="icon md-comment" aria-hidden="true"></i>
     </a>
-  </li>
+  </li> --}}
 </ul>
 <!-- End Navbar Toolbar Right -->
 </div>

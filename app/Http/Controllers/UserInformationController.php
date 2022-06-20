@@ -10,7 +10,7 @@ use Auth;
 class UserInformationController extends Controller
 {
     public function __construct(){
-        $this->middleware(['role_or_permission:user|admin|edit information']);
+        $this->middleware(['permission:edit information']);
         // theo per
         // $this->middleware('permission:add user', ['only' => ['create', 'store']]);
     }
