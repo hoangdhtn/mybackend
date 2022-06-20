@@ -24,8 +24,14 @@ A premium and open source dashboard template with a responsive and high-quality 
  4. PHP >= 7.4.29
 
 ## Installation
+Project
+   
 
     git clone https://github.com/hoangdhtn/mybackend.git
+
+Database
+
+    File name: mybackend.sql
 
 ## Author
 
