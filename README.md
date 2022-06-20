@@ -20,7 +20,7 @@ A premium and open source dashboard template with a responsive and high-quality 
 
  1. Laravel Framework >= 9
  2. Remark UI (HTML/CSS/JS)
- 3. Spatie (Laravel-Permission)
+ 3. Spatie (Laravel-Permission v5)
  4. PHP >= 7.4.29
 
 ## Installation
